@@ -1,5 +1,16 @@
-A lightweight tool for decrypting Saltpack using a 32-byte hex key.
+# Saltpack Decryptor (Go)
 
-Generate test keys https://crypto-online.cn/playground/x25519/
+A lightweight CLI tool written in Go for decrypting saltpack signcrypted messages using a hex-encoded X25519 key.
 
-cmd usage: -key <hex> -in <file> [-out <file>]
+## Features
+
+- Decrypts saltpack signcrypted data
+- Uses 32-byte hex-encoded X25519 private keys
+- Supports file input and output
+- Cross-platform (Linux, Windows, macOS)
+- Minimal dependencies
+
+## Usage
+
+```bash
+go run main.go -key <hex-key> -in <input-file> [-out <output-file>]
